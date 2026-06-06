@@ -9,8 +9,8 @@ alias ls='ls --color=auto'
 alias grep='grep --color=auto'
 alias l='ls -lah --color=auto'
 alias vim='nvim'
-
-export PATH="~/bin:$PATH"
+alias ..='cd ..'
+export PATH="~/bin:/usr/local/go/bin:$PATH"
 
 parse_git_branch() {
      local branch="$(git branch --show-current 2>/dev/null)"
