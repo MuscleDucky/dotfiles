@@ -9,6 +9,7 @@ alias ls='ls --color=auto'
 alias grep='grep --color=auto'
 alias l='ls -lah --color=auto'
 alias vim='nvim'
+alias lg='lazygit'
 alias ..='cd ..'
 export PATH="~/bin:/usr/local/go/bin:$PATH"
 
