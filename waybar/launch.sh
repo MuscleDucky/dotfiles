@@ -1,4 +1,3 @@
 #!/usr/bin/env sh
 
-killall waybar
-waybar
+killall -SIGUSR2 waybar || waybar
