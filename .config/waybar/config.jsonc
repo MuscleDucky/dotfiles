@@ -1,11 +1,17 @@
 {
     "layer": "top",
-    "modules-left": ["hyprland/workspaces", "hyprland/submap", "custom/media-now-playing"],
+   // "modules-left": ["hyprland/workspaces", "hyprland/submap", "custom/media-now-playing"],
+    "modules-left": ["hyprland/workspaces", "hyprland/submap"],
     "modules-center": ["clock"],
     "modules-right": ["group/volume", "battery", "network", "cpu", "memory", "bluetooth"],
     "hyprland/window": {
         "max-length": 50
     },
+    "hyprland/workspaces": {
+    "persistent-workspaces": {
+        "*": [1, 2, 3, 4, 5]
+    }
+},
  "battery": {
 	"interval": 60,
 	"format": "{capacity}% {icon}",
@@ -75,8 +81,8 @@
   },
     "custom/media-now-playing": {
         "exec": "~/.config/waybar/custom-modules/media/media-now-playing.sh",
+        "return-type": "string",
         "escape": true,
         "tooltip": false,
-        "interval": 10
     }
 }

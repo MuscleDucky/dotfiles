@@ -82,3 +82,7 @@ tooltip {
 tooltip label {
   color: white;
 }
+#custom-media-now-playing {
+    min-width: 300px;
+
+}
