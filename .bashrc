@@ -11,7 +11,7 @@ alias l='ls -lah --color=auto'
 alias vim='nvim'
 alias lg='lazygit'
 alias ..='cd ..'
-export PATH="~/bin:/usr/local/go/bin:$PATH"
+export PATH="~/bin:~/go/bin:/usr/local/go/bin:$PATH"
 
 parse_git_branch() {
      local branch="$(git branch --show-current 2>/dev/null)"
